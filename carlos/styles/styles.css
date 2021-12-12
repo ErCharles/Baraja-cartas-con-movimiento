@@ -1,0 +1,257 @@
+body{
+    background-image: url(../imagenes/fondo-mesa-poker-color-verde_47243-1068.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carta{
+    width: 200px;
+    height: 300px;
+    background-color: rgb(212, 211, 211);
+    border-radius: 8px;
+    border: solid 2px;
+}
+.numeropalo{
+    font-size: 30px;
+}
+.numero{
+    position: relative;
+    left: 5px;
+}
+.palo{
+    position: relative;
+    top: -5;
+    left: -5;
+}
+.forma{
+    position: absolute;
+    font-size: 60px;
+}
+#cuatropicas{
+    position: absolute;
+    left: 800px;
+    top: 300px;
+    z-index: 9;
+    animation-name: ani_pica;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-iteration-count: 3s;
+
+}
+.palo_invertido_picas{
+    position: absolute;
+    top: 220px;
+    left: 180px;
+    font-size: 30px;
+    transform: rotate(180deg);
+}
+#picas_1{
+    left: 40px;
+    top: 40px;
+}
+#picas_2{
+    left: 120px;
+    top: 40px;
+}
+#picas_3{
+    left: 40px;
+    top: 190px;
+}
+#picas_4{
+    left: 120px;
+    top: 190px;
+}
+
+/* Treboles */
+
+#sietetreboles{
+    position: absolute;
+    left: 800px;
+    top: 300px;
+    z-index: 7;
+
+    animation-name: ani_treb;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-iteration-count: 3s;
+}
+.palo_invertido_trebol{
+    position: absolute;
+    top: 220px;
+    left: 180px;
+    font-size: 30px;
+    transform: rotate(180deg);
+}
+#trebol_1{
+    top: 15px;
+    left: 20px;
+}
+#trebol_2{
+    top: 15px;
+    left: 140px;
+}
+#trebol_3{
+    top: 50px;
+    left: 80px;
+}
+#trebol_4{
+    top: 90px;
+    left: 20px;
+}
+#trebol_5{
+    top: 90px;
+    left: 140px;
+}
+#trebol_6{
+    transform: rotate(180deg);
+    top: 190px;
+    left: 20px;
+}
+#trebol_7{ 
+    transform: rotate(180deg);
+    top: 190px;
+    left: 140px;
+}
+/*Letras rojas*/
+.numerorojo{
+    color: red;
+    position: relative;
+    left: 5px;
+}
+.palorojo{
+    color: red;
+    position: relative;
+    top: -5;
+    left: -5;
+}
+
+
+/* corazones */
+
+#seiscorazones{
+    position: absolute;
+    left: 800px;
+    top: 300px;
+    z-index: 8;
+    animation-name: ani_cora;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-iteration-count: 3s;
+}
+
+.palo_invertido_corazones{
+    position: absolute;
+    top: 220px;
+    left: 180px;
+    font-size: 30px;
+    transform: rotate(180deg);
+}
+#corazon_1{
+    color: red;
+    top: 20px;
+    left: 40px;
+}
+#corazon_2{
+    color: red; 
+    top: 20px;
+    left: 120px;
+}
+#corazon_3{
+    color: red;
+    left: 40px;
+    top: 100px;
+}
+#corazon_4{
+    color: red;  
+    left: 120px;
+    top: 200px;
+}
+#corazon_5{
+    color: red;
+    left: 40px;
+    top: 200px;
+}
+#corazon_6{
+    color: red;
+    left: 120px;
+    top: 100px;
+}
+/* as */
+
+#asdiamantes{
+    position: absolute;
+    left: 800px;
+    top: 300px;
+    z-index: 10;
+    animation-name: ani_dia;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-iteration-count: 3s;
+}
+.palo_invertido_diamantes{
+    position: absolute;
+    top: 230px;
+    left: 180px;
+    font-size: 30px;
+    transform: rotate(180deg);
+}
+#diamantes_1{
+    top: 50px;
+    left: 65px;
+    font-size: 150px;
+    color: red;
+}
+
+
+
+
+@keyframes ani_pica {
+    0% {
+        left: 800px;
+        top: 300px;
+
+    }
+    100% {
+        left: 950px;
+        top: 240px;
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes ani_dia {
+    0% {
+        left: 800px;
+        top: 300px;
+
+    }
+    100% {
+        left: 1000px;
+        top: 260px;
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes ani_cora {
+    0% {
+        left: 800px;
+        top: 300px;
+
+    }
+    100% {
+        left: 900px;
+        top: 260px;
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes ani_treb {
+    0% {
+        left: 800px;
+        top: 300px;
+
+    }
+    100% {
+        left: 800px;
+        top: 300px;
+        transform: rotate(-30deg);
+    }
+}
